@@ -14,19 +14,18 @@ header{
     align-items: center;
     grid-template-columns: 20% 1fr 20%;
     background-color: rgba(0, 0, 0, 0.1);
-    height: 4.5rem;
 }
 
 header > div{
     align-self: center;
-    justify-self: center;
+    justify-self: end;
+    margin-right: 1.5rem;
 }
 
 nav > ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
 }
 
 nav > ul > li{
@@ -38,7 +37,7 @@ nav > ul > li{
 }
 
 .logo{
-    justify-self: center;
+    justify-self: start;
     align-items: center;
-    margin: 0;
+    margin-left: 1.5rem;
 }
