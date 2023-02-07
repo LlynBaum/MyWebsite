@@ -1,8 +1,44 @@
 body{
+    margin: 0;
     display: grid;
     grid-template-columns: 80vw 1fr;
-    grid-template-areas: 
-    'header' 'header'
-    'main' 'sidebar'
-    'footer' 'footer';
+    grid-template-areas:
+        'header header'
+        'content sidebar'
+        'footer footer';
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20% 1fr 20%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 4.5rem;
+}
+
+header > div{
+    align-self: center;
+    justify-self: center;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav > ul > li{
+    margin: 10px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.logo{
+    justify-self: center;
+    align-items: center;
+    margin: 0;
 }
