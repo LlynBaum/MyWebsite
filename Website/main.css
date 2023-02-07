@@ -1,0 +1,8 @@
+body{
+    display: grid;
+    grid-template-columns: 80vw 1fr;
+    grid-template-areas: 
+    'header' 'header'
+    'main' 'sidebar'
+    'footer' 'footer';
+}
