@@ -1,7 +1,9 @@
 body{
     margin: 0;
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 80vw 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         'header header'
         'content sidebar'
@@ -13,7 +15,18 @@ header{
     display: grid;
     align-items: center;
     grid-template-columns: 20% 1fr 20%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+main{
+    grid-area: content;
+    margin-left: 1rem;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1rem solid rgba(0, 0, 0, 0.3);
 }
 
 header > div{
@@ -26,10 +39,33 @@ nav > ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
+    padding: 0;
 }
 
 nav > ul > li{
-    margin: 10px;
+    margin: 15px;
+}
+
+footer > ul{
+    list-style-type: none;
+}
+
+.sidebar{
+    border-left: 1px solid rgba(0, 0, 0, 0.336);
+
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5rem auto;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    'title'
+    'content';
+}
+
+section.sidebar > h3{
+    grid-area: title;
 }
 
 .container-flex{
@@ -39,5 +75,6 @@ nav > ul > li{
 .logo{
     justify-self: start;
     align-items: center;
-    margin-left: 1.5rem;
+    height: 3rem;
+    margin: 1.5rem;
 }
