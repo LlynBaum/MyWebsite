@@ -10,6 +10,10 @@ body{
         'footer footer';
 }
 
+a:hover{
+    color: #CF768E;
+}
+
 header{
     grid-area: header;
     display: grid;
@@ -30,6 +34,8 @@ footer{
 }
 
 header > div{
+    display: flex;
+    column-gap: 10px;
     align-self: center;
     justify-self: end;
     margin-right: 1.5rem;
@@ -77,4 +83,14 @@ section.sidebar > h3{
     align-items: center;
     height: 3rem;
     margin: 1.5rem;
+}
+
+.bell{
+    padding: 1rem;
+    font-size: 1.15rem !important;
+    align-self: center;
+}
+
+.bell:hover{
+    color: #CF768E;
 }
