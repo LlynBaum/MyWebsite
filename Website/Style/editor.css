@@ -1,0 +1,12 @@
+.editor{
+    background-color: var(--background-color);
+    min-height: 50rem;
+    width: 75vw;
+    cursor: text;
+}
+.editor:empty:after{
+    content: 'Type your text';
+}
+.editor:empty:focus::after{
+    content: '';
+}

@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Website</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="Style/main.css">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
     <body>
         <header>
-            <a id="logoLink" href=""><img id="logo" src="Logo/Storyverse_transparent_darker.png" alt="Storyverse"></a>
-            <nav id="bigNav">
+            <a class="logoLink" href=""><img class="logo" src="Style/Logo/Storyverse_transparent_darker.png" alt="Storyverse"></a>
+            <nav id="desktop-menu">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Your Stories</a></li>
@@ -29,20 +29,27 @@
                 <a>Log In</a>
             </div>
 
-            <div style="display: none;">
-                <nav>
+            <div class="small-menu">
+                <input type="checkbox" id="menu_toggel">
+                <label class="menu_btn" for="menu_toggel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="menu_box">
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Your Stories</a></li>
                         <li><a href="">Library</a></li>
                         <li><a href="">About</a></li>
                     </ul>
-                </nav>
-                <div class="theme-button-parent" style="position: relative;">
-                    <label>
-                        <input type="checkbox" id="theme-button" class="theme-button">
-                        <span class="slider"></span>
-                    </label>  
+                    <div class="theme-button-parent" style="position: relative;">
+                        <label>
+                            <input type="checkbox" id="theme-button-menu-small" class="theme-button">
+                            <span class="slider"></span>
+                        </label>  
+                    </div>
                 </div>
             </div>
         </header>
@@ -110,6 +117,6 @@
                 <li>Impressum</li>
             </ul>
         </footer>
-        <script src="main.js"></script>
+        <script src="JavaScript/main.js"></script>
     </body>
 </html>
