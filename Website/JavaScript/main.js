@@ -19,6 +19,7 @@ themeButton?.addEventListener("click", () => {
 
 var darkModeActive = localStorage.getItem("darkMode");
 themeButton.checked = darkModeActive;
+themeButtonSmall.checked = darkModeActive;
 if(darkModeActive){
     document.body.classList.toggle("dark-theme");
 }
