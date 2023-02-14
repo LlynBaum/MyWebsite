@@ -1,6 +1,7 @@
 import './App.css';
-import Header from "./Components/Header/Header";
-import Footer from './Components/Footer/Footer';
+import Header from "./Components/Header/Header.js";
+import Footer from './Components/Footer/Footer.js';
+import StoryEditor from './Components/StoryEditor/StoryEditor.js';
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Header />
 
       <main>
-
+        <StoryEditor />
       </main>
 
       <Footer />
