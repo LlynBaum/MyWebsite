@@ -1,0 +1,14 @@
+.desktop-menu{
+    grid-area: mid; 
+}
+.desktop-menu > ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+.desktop-menu > ul > li{
+    margin: 1rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+}

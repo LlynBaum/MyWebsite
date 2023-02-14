@@ -1,5 +1,5 @@
 import './DarkModeButton.css';
-import MoonSun from "./moon-sun.png"
+import MoonSun from "./moon-sun-dark.png"
 
 export default function DarkModeButton({isChecked, switchDarkMode}) {
     return(

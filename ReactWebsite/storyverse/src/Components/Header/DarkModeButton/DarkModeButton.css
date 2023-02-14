@@ -1,0 +1,30 @@
+:root{
+  --darkModeButtonPicUrl: url(./moon-sun-dark.png);
+}
+
+.theme-button-parent{
+  width: 2.2rem;
+  height: 2.2rem;
+}
+  
+.dark-mode-switch{
+  position: absolute;
+  display: none;
+}
+.dark-mode-switch-picture{
+  content: var(--darkModeButtonPicUrl);
+  height: 2.2rem;
+  transition: transform .3s;
+  position: absolute;
+  cursor: pointer;
+}
+.dark-mode-switch:checked ~ .dark-mode-switch-picture{
+  transform: rotate(180deg);
+  --darkModeButtonPicUrl: url(./moon-sun-light.png);
+}
+.dark-mode-switch-picture:hover{
+  transform: rotate(15deg);
+}
+.dark-mode-switch:checked ~ .dark-mode-switch-picture:hover{
+  transform: rotate(195deg);
+}

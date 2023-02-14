@@ -1,7 +1,7 @@
 :root{
   --background-color: white;
   --font-color: black;
-  --logoUrl: url(./Styles/Logo/Storyverse_transparent_darker.png);
+  --logoUrl: url(../src/Logo/Storyverse_transparent_darker.png);
   --link-color: #CF768E;
 
   --btn-light: #d8dbe0;
@@ -15,7 +15,7 @@
 .dark-theme{
   --background-color: rgb(58, 58, 58);
   --font-color: rgb(211, 211, 211);
-  --logoUrl: url(./Styles/Logo/Storyverse_transparent.png);
+  --logoUrl: url(../src/Logo/Storyverse_transparent.png);
   --link-color: #E68DA5;
   --scrolbar-thumb: rgb(129, 129, 129);
   --scrolbar-track: rgb(66, 66, 66);
@@ -102,21 +102,6 @@ a:active{
 
 .log-in-button:hover{
   color: #CF768E;
-}
-
-.desktop-menu{
-  grid-area: mid;
-}
-.desktop-menu > ul{
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  list-style-type: none;
-}
-.desktop-menu > ul > li{
-  margin: 1rem;
-  font-size: 1.15rem;
-  cursor: pointer;
 }
 
 /* Responsive */
