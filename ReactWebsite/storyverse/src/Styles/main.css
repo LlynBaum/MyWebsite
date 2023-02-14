@@ -187,9 +187,9 @@ input:checked ~ .slider{
     box-shadow: inset 5px -4px 0px 0px var(--btn-light);
     background-color: var(--btn-dark);
     transition: 0.3s;
-}
+  }
   
-input:checked ~ .slider::before {
+  input:checked ~ .slider::before {
     transform: translateX(20px);
     background-color: var(--btn-dark);
     box-shadow: none;

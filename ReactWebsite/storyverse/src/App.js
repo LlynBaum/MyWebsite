@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import Logo from "./Styles/Logo/Storyverse_transparent_darker.png";
 import './App.css';
+import { useState } from 'react';
+import DarkModeButton from "./Components/DarkModeButton/DarkModeButton.js"
+
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  if(isDarkMode){
+    document.getElementById("root").classList.add("dark-theme");
+  }
+  else{
+    document.getElementById("root").classList.remove("dark-theme");
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img className='logo' src={Logo} alt="Storyverse" />
+
+        <nav className="desktop-menu">
+          <ul>
+            <li>Home</li>
+            <li>Your Stories</li>
+            <li>Library</li>
+            <li>About</li>
+          </ul>
+        </nav>
+
+        <div className="user-area">
+          <DarkModeButton isChecked={isDarkMode} switchDarkMode={() => setIsDarkMode(!isDarkMode)} />
+          <i class="fa fa-bell bell"></i>
+          <button className="log-in-button">Log in</button>
+        </div>
       </header>
-    </div>
+    </>
   );
 }
 

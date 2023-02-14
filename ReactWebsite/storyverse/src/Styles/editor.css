@@ -1,0 +1,28 @@
+[contenteditable]:focus{
+    outline: none;
+}
+[contenteditable]:empty::after{
+    font-style: italic;
+    content: attr(placeholder);
+}
+
+[contenteditable]:empty:focus:after{
+    content: '';
+}
+
+.editor{
+    margin-top: 1rem;
+    background-color: var(--background-color);
+    min-height: 50rem;
+    width: 75vw;
+    cursor: text;
+}
+
+.title{
+    margin-top: 1rem;
+    background-color: var(--background-color);
+    min-height: 1rem;
+    width: 75vw;
+    cursor: text;  
+    text-align: center;
+}
