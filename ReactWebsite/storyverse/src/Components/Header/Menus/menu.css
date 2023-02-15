@@ -9,6 +9,16 @@
 }
 .desktop-menu > ul > li{
     margin: 1rem;
+}
+
+li > button{
+    background-color: transparent;
+    border: none;
     font-size: 1.15rem;
     cursor: pointer;
+    color: var(--font-color);
+}
+
+li > button:hover{
+    color: #CF768E;
 }

@@ -3,7 +3,8 @@ import DarkModeButton from "./DarkModeButton/DarkModeButton.js"
 import { useState } from 'react';
 import DesktopMenu from "./Menus/DesktopMenu";
 
-export default function Header(){
+export default function Header({switchCoponentInMainSection}){
+
     const [isDarkMode, setIsDarkMode] = useState(false);
     if(isDarkMode){
         document.getElementById("root").classList.add("dark-theme");
@@ -17,7 +18,7 @@ export default function Header(){
           <header>
             <img className='logo' src={Logo} alt="Storyverse" />
     
-            <DesktopMenu />
+            <DesktopMenu switchCoponentInMainSection={switchCoponentInMainSection}/>
     
             <div className="user-area">
               <DarkModeButton isChecked={isDarkMode} switchDarkMode={() => setIsDarkMode(!isDarkMode)} />
