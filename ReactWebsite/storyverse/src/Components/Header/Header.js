@@ -1,8 +1,8 @@
 import Logo from "../../Logo/Storyverse_transparent_darker.png";
 import DarkModeButton from "./DarkModeButton/DarkModeButton.js"
 import { useState } from 'react';
-import DesktopMenu from "../Menus/DesktopMenu";
-import MobileMenu from "../Menus/MobileMenu";
+import DesktopMenu from "./Menus/DesktopMenu.js";
+import MobileMenu from "./Menus/MobileMenu.js";
 
 export default function Header({switchCoponentInMainSection}){
 

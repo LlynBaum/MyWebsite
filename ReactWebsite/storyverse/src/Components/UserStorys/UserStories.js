@@ -1,4 +1,5 @@
 import StoryEditor from "../StoryEditor/StoryEditor";
+import StoryCard from "./StoryCard/StoryCard";
 import "./UserStories.css";
 
 export default function UserStories({switchCoponentInMainSection}) {
@@ -17,9 +18,10 @@ export default function UserStories({switchCoponentInMainSection}) {
                             <button className="filter">Published Stories</button>
                         </div>
                         <ul className="story-list">
-                            <li>Story 1</li>
-                            <li>Story 2</li>
-                            <li>Story 3</li>
+                            <li><StoryCard title="Story 1" isDraft/></li>
+                            <li><StoryCard title="Story 2" views="4567" comments="657"/></li>
+                            <li><StoryCard title="Story 3" views="235" comments="687" isDraft/></li>
+                            <li><StoryCard title="Story 4" views="7689" comments="978"/></li>
                         </ul>
                     </div>
                 </div>

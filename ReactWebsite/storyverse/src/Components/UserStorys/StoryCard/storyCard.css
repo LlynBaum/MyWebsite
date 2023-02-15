@@ -1,0 +1,31 @@
+.story-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px 4px;
+    gap: 1rem;
+}
+
+.story-stats > p{
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.story-stats > p > i{
+    font-size: 1.2rem;
+}
+
+.story-title{
+    margin: 0;
+}
+
+.top-row{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.top-row > p{
+    margin: 0;
+}

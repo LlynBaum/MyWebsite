@@ -1,5 +1,5 @@
-import UserStories from "../UserStorys/UserStories";
-import DarkModeButton from "../Header/DarkModeButton/DarkModeButton";
+import UserStories from "../../UserStorys/UserStories.js";
+import DarkModeButton from "../DarkModeButton/DarkModeButton";
 import "./mobileMenu.css";
 
 export default function MobileMenu({switchCoponentInMainSection, isChecked, switchDarkMode}){

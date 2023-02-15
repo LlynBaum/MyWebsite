@@ -1,4 +1,4 @@
-import UserStories from "../UserStorys/UserStories";
+import UserStories from "../../UserStorys/UserStories.js";
 import "./menu.css";
 
 export default function DesktopMenu({switchCoponentInMainSection}){
