@@ -2,15 +2,16 @@ import Logo from "../../Logo/Storyverse_transparent_darker.png";
 import DarkModeButton from "./DarkModeButton/DarkModeButton.js"
 import { useState } from 'react';
 import DesktopMenu from "./Menus/DesktopMenu";
+import MobileMenu from "./Menus/MobileMenu";
 
 export default function Header({switchCoponentInMainSection}){
 
     const [isDarkMode, setIsDarkMode] = useState(false);
     if(isDarkMode){
-        document.getElementById("root").classList.add("dark-theme");
+        document.body.classList.add("dark-theme");
     }
     else{
-        document.getElementById("root").classList.remove("dark-theme");
+        document.body.classList.remove("dark-theme");
     }
 
     return (
@@ -18,7 +19,8 @@ export default function Header({switchCoponentInMainSection}){
           <header>
             <img className='logo' src={Logo} alt="Storyverse" />
     
-            <DesktopMenu switchCoponentInMainSection={switchCoponentInMainSection}/>
+            <DesktopMenu switchCoponentInMainSection={switchCoponentInMainSection} />
+            <MobileMenu switchCoponentInMainSection={switchCoponentInMainSection} />
     
             <div className="user-area">
               <DarkModeButton isChecked={isDarkMode} switchDarkMode={() => setIsDarkMode(!isDarkMode)} />

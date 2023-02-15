@@ -17,7 +17,8 @@
   --font-color: rgb(211, 211, 211);
   --logoUrl: url(../src/Logo/Storyverse_transparent.png);
   --link-color: #E68DA5;
-  --scrolbar-thumb: rgb(129, 129, 129);
+  
+  --scrolbar-thumb: rgb(119, 119, 119);
   --scrolbar-track: rgb(66, 66, 66);
   --scrolbar-thumb-hover: rgb(141, 141, 141);
 }
@@ -56,6 +57,7 @@ header{
 a{
   text-decoration: none;
   color: var(--font-color);
+  transition: color .3s ease;
 }
 
 a:hover{
@@ -98,6 +100,7 @@ a:active{
   cursor: pointer;
   font-size: 1.1rem;
   color: var(--font-color);
+  transition: color .3s ease;
 }
 
 .log-in-button:hover{
@@ -105,6 +108,10 @@ a:active{
 }
 
 /* Responsive */
+
+.mobile-menu{
+  display: none;
+}
 
 @media (max-width: 900px){
   .logo{
@@ -115,4 +122,27 @@ a:active{
   .desktop-menu{
     display: none;
   }
+  .mobile-menu{
+    display: block;
+  }
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--scrolbar-track);
+  border-radius: 50px;
+  box-shadow: inset 0 0 5px var(--scrolbar-thumb);
+  transition: background-color .3s ease;
+  transition: box-shadow .3s ease;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--scrolbar-thumb);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: var(--scrolbar-thumb-hover);
 }
