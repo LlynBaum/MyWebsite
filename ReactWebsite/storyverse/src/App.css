@@ -125,6 +125,9 @@ a:active{
   .mobile-menu{
     display: block;
   }
+  .dark-mode-button-user-area{
+    display: none;
+  }
 }
 
 /*Scrollbar*/

@@ -20,10 +20,16 @@ export default function Header({switchCoponentInMainSection}){
             <img className='logo' src={Logo} alt="Storyverse" />
     
             <DesktopMenu switchCoponentInMainSection={switchCoponentInMainSection} />
-            <MobileMenu switchCoponentInMainSection={switchCoponentInMainSection} />
+            <MobileMenu 
+              switchCoponentInMainSection={switchCoponentInMainSection} 
+              isChecked={isDarkMode} 
+              switchDarkMode={() => setIsDarkMode(!isDarkMode)}>
+            </MobileMenu>
     
             <div className="user-area">
-              <DarkModeButton isChecked={isDarkMode} switchDarkMode={() => setIsDarkMode(!isDarkMode)} />
+              <div className="dark-mode-button-user-area">
+                <DarkModeButton isChecked={isDarkMode} switchDarkMode={() => setIsDarkMode(!isDarkMode)} />
+              </div>
               <i className="fa fa-bell bell"></i>
               <button className="log-in-button">Log in</button>
             </div>
