@@ -1,15 +1,16 @@
 import './App.css';
 import Header from "./Components/Header/Header.js";
 import Footer from './Components/Footer/Footer.js';
-import StoryEditor from './Components/StoryEditor/StoryEditor.js';
 import { useState } from 'react';
+import UserStories from './Components/UserStorys/UserStories';
 
 
 function App() {
-  const [curComponent, setCurComponent] = useState(<StoryEditor />)
+  const [curComponent, setCurComponent] = useState(
+    <UserStories switchCoponentInMainSection={switchCoponentInMainSection}/>
+  );
 
   function switchCoponentInMainSection(component){
-    console.log({component})
     setCurComponent(component);
   }
 

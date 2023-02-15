@@ -1,13 +1,14 @@
+import StoryEditor from "../StoryEditor/StoryEditor";
 import "./UserStories.css";
 
-export default function UserStories() {
+export default function UserStories({switchCoponentInMainSection}) {
     return(
         <>
             <div className="user-stories-container">
                 <div className="story-list-pannel">
                     <div className="head">
                         <h2 className="head-title">Your Stories</h2>
-                        <button className="creat-button">Create</button>
+                        <button className="creat-button" onClick={() => switchCoponentInMainSection(<StoryEditor />)}>Create</button>
                     </div>
                     <div className="story-list-container">
                         <div className="filter-selection">
