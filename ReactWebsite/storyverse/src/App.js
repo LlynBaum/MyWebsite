@@ -3,6 +3,8 @@ import Header from "./Components/Header/Header.js";
 import Footer from './Components/Footer/Footer.js';
 import { useState } from 'react';
 import UserStories from './Components/UserStorys/UserStories';
+import { Routes ,Route } from 'react-router-dom';
+import StoryEditor from './Components/StoryEditor/StoryEditor';
 
 
 function App() {
@@ -19,8 +21,12 @@ function App() {
       <Header switchCoponentInMainSection={switchCoponentInMainSection}/>
 
       <main>
-        {curComponent}
-      </main>
+          <Routes>
+            <Route path='/' element={<UserStories />} />
+            <Route path='/your-stories' element={<UserStories />} />
+            <Route path='/story-editor' element={<StoryEditor />} />
+          </Routes>
+        </main>
 
       <Footer />
     </>

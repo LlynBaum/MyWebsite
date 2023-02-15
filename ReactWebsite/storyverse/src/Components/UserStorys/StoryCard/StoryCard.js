@@ -1,5 +1,4 @@
 import "./storyCard.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function StoryCard({title, views, comments, isDraft}){
 
@@ -17,8 +16,8 @@ export default function StoryCard({title, views, comments, isDraft}){
                 {isDraft && (<p><i>Draft</i></p>)}
             </div>
             <div className="story-stats">
-                <p><i class="fa-solid fa-eye"></i> {views}</p>
-                <p><i class="fa-regular fa-comment"></i> {comments}</p>
+                <p><i className="fa-solid fa-eye"></i> {views}</p>
+                <p><i className="fa-regular fa-comment"></i> {comments}</p>
             </div>
         </>
     );

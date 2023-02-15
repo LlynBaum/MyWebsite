@@ -23,9 +23,12 @@
     border: none;
     background-color: #E68DA5;
     font-size: 1.1rem;
+    color: black;
+    text-align: center;
 }
 .creat-button:hover{
     background-color: #CF768E;
+    color: black;
 }
 
 .story-list{
@@ -44,8 +47,7 @@
 
 .filter{
     font-size: 1.2rem;
-    padding: 0 1rem 3px;
-    margin: 0;
+    padding: 0 1rem 6px;
     width: fit-content;
     border: none;
     background-color: transparent;

@@ -48,14 +48,14 @@
     align-items: center;
 }
 
-.menu_box > ul{
+.nav-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
 }
 
-.menu_box > ul > li{
+.nav-menu > li{
     margin-top: 1rem;
     transition: .25s;
     list-style-type: none;

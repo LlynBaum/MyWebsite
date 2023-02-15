@@ -1,15 +1,16 @@
-import StoryEditor from "../StoryEditor/StoryEditor";
 import StoryCard from "./StoryCard/StoryCard";
+import { useMatch, Link, BrowserRouter } from "react-router-dom"; 
 import "./UserStories.css";
 
-export default function UserStories({switchCoponentInMainSection}) {
+export default function UserStories() {
+
     return(
         <>
             <div className="user-stories-container">
                 <div className="story-list-pannel">
                     <div className="head">
                         <h2 className="head-title">Your Stories</h2>
-                        <button className="creat-button" onClick={() => switchCoponentInMainSection(<StoryEditor />)}>Create</button>
+                        <><Link to={'/story-editor'} className="creat-button">Creat</Link></>
                     </div>
                     <div className="story-list-container">
                         <div className="filter-selection">
