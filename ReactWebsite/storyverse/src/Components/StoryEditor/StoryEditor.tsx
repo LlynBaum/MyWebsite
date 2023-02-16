@@ -1,4 +1,5 @@
 import "./storyEditor.css"
+import React from "react";
 
 export default function StoryEditor(){
     return(

@@ -1,7 +1,8 @@
 import './DarkModeButton.css';
 import MoonSun from "./moon-sun-dark.png"
+import React from "react";
 
-export default function DarkModeButton({isChecked, switchDarkMode}) {
+export default function DarkModeButton({isChecked, switchDarkMode}: {isChecked : boolean, switchDarkMode: () => void}) {
     return(
         <div className="theme-button-parent">
         <label>

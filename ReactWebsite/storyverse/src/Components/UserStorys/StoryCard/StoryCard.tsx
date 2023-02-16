@@ -1,6 +1,6 @@
 import "./storyCard.css"
 
-export default function StoryCard({title, views, comments, isDraft}){
+export default function StoryCard({title, views, comments, isDraft}: {title: string, views?: string, comments?: string, isDraft?: boolean}){
 
     if(views == null || views == "0"){
         views = "-";
@@ -13,7 +13,7 @@ export default function StoryCard({title, views, comments, isDraft}){
         <>
             <div className="top-row">
                 <h3 className="story-title">{title}</h3>
-                {isDraft && (<p><i>Draft</i></p>)}
+                {isDraft === true && (<p><i>Draft</i></p>)}
             </div>
             <div className="story-stats">
                 <p><i className="fa-solid fa-eye"></i> {views}</p>
