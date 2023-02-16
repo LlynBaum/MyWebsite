@@ -1,7 +1,7 @@
 import { useMatch, Link, BrowserRouter } from "react-router-dom"; 
 import "./menu.css";
 
-export default function DesktopMenu({switchCoponentInMainSection}){
+export default function DesktopMenu({}){
 
     return(
         <>

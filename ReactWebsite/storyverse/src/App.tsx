@@ -1,24 +1,16 @@
-import './App.css';
-import Header from "./Components/Header/Header.js";
-import Footer from './Components/Footer/Footer.js';
-import { useState } from 'react';
+import React from 'react';
+import Header from "./Components/Header/Header";
+import Footer from './Components/Footer/Footer';
 import UserStories from './Components/UserStorys/UserStories';
 import { Routes ,Route } from 'react-router-dom';
 import StoryEditor from './Components/StoryEditor/StoryEditor';
+import './App.css';
 
 
 function App() {
-  const [curComponent, setCurComponent] = useState(
-    <UserStories switchCoponentInMainSection={switchCoponentInMainSection}/>
-  );
-
-  function switchCoponentInMainSection(component){
-    setCurComponent(component);
-  }
-
   return (
     <>
-      <Header switchCoponentInMainSection={switchCoponentInMainSection}/>
+      <Header />
 
       <main>
           <Routes>
@@ -26,6 +18,7 @@ function App() {
             <Route path='/your-stories' element={<UserStories />} />
             <Route path='/story-editor' element={<StoryEditor />} />
           </Routes>
+          {/* routes */}
         </main>
 
       <Footer />

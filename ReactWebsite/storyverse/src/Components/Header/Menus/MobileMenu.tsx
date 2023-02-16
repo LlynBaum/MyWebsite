@@ -1,8 +1,9 @@
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
-import { useMatch, Link, BrowserRouter } from "react-router-dom"; 
+import { Link } from "react-router-dom"; 
 import "./mobileMenu.css";
+import React from "react";
 
-export default function MobileMenu({switchCoponentInMainSection, isChecked, switchDarkMode}){
+export default function MobileMenu({isChecked, switchDarkMode}: {isChecked: boolean, switchDarkMode: () => void}){
     
     return(
         <>
