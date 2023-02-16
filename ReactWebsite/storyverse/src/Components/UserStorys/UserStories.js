@@ -10,7 +10,7 @@ export default function UserStories() {
                 <div className="story-list-pannel">
                     <div className="head">
                         <h2 className="head-title">Your Stories</h2>
-                        <><Link to={'/story-editor'} className="creat-button">Creat</Link></>
+                        <Link to={'/story-editor'} className="creat-button"><p>Create</p></Link>
                     </div>
                     <div className="story-list-container">
                         <div className="filter-selection">

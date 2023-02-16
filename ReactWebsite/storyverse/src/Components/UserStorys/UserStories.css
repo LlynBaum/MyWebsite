@@ -17,15 +17,19 @@
 }
 
 .creat-button{
-    height: 2.4rem;
-    width: 7rem;
     border-radius: 12px;
-    border: none;
     background-color: #E68DA5;
-    font-size: 1.1rem;
-    color: black;
-    text-align: center;
 }
+
+.creat-button > p{
+    color: black;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: .5rem 1.5rem;
+}
+
 .creat-button:hover{
     background-color: #CF768E;
     color: black;
